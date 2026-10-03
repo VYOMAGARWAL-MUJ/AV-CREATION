@@ -103,11 +103,11 @@ button,input,textarea,select{font:inherit}
 .story-signature{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:1.5rem;margin-top:28px}
 .story-signature span{font-size:12px;margin-left:12px}
 .contact{background:#fffdf9}
-.contact-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.contact-info,.enquiry-form{border:1px solid #e4d7c7;background:#fff;padding:42px}
+.contact-grid{max-width:700px;margin:auto;display:grid;grid-template-columns:1fr;gap:20px}
+.contact-info{border:1px solid #e4d7c7;background:#fff;padding:42px}
 .contact-logo{width:86px;height:86px;border-radius:50%;overflow:hidden;border:1px solid rgba(182,134,44,.35);padding:5px;margin-bottom:15px}
 .contact-logo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
-.contact-info h3,.enquiry-form h3{font-family:"Cormorant Garamond",serif;font-size:2.35rem;font-weight:500;line-height:1}
+.contact-info h3{font-family:"Cormorant Garamond",serif;font-size:2.35rem;font-weight:500;line-height:1}
 .contact-tagline{font-family:"Cormorant Garamond",serif;font-size:1.1rem;color:var(--gold);margin-top:5px}
 .contact-list{margin:30px 0}
 .contact-list>a,.contact-list>div{display:flex;gap:15px;align-items:flex-start;border-top:1px solid #eee5da;padding:15px 0}
@@ -115,13 +115,6 @@ button,input,textarea,select{font:inherit}
 .contact-list small{display:block;color:#a28f7d;font-size:7px;letter-spacing:.18em;margin-bottom:2px}
 .contact-list strong{font-size:11px;font-weight:500;line-height:1.7}
 .full-btn{width:100%}
-.enquiry-form{display:flex;flex-direction:column;gap:16px}
-.enquiry-form h3{margin-top:5px}
-.enquiry-form label{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#796b61}
-.enquiry-form input,.enquiry-form select,.enquiry-form textarea{display:block;width:100%;margin-top:6px;border:1px solid #dfd2c3;background:#fffdfa;padding:12px 13px;outline:none;font-size:11px;color:var(--ink);resize:vertical}
-.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:var(--gold)}
-.enquiry-form .btn{width:max-content}
-.form-note{font-size:8px!important;color:#978a80}
 footer{background:#211b18;color:#cfc3b8;padding:45px 34px 18px}
 .footer-top{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:30px}
 .footer-top>img{width:105px;height:75px;object-fit:contain;filter:grayscale(1) brightness(2);mix-blend-mode:screen}
@@ -140,6 +133,5 @@ footer{background:#211b18;color:#cfc3b8;padding:45px 34px 18px}
   .hero{min-height:calc(100vh - 100px)}.hero-logo-wrap{width:105px;height:105px}.hero h1{font-size:4rem}.hero-sub{font-size:1.15rem}.hero-actions{flex-direction:column;gap:20px}.hero-side-note{display:none}
   .section{padding:75px 18px}.intro-layout,.about-grid,.story-inner,.contact-grid{grid-template-columns:1fr}.section-top{display:block}.section-lead{margin-top:20px}.feature-card{grid-column:auto}
   .about-grid{gap:15px}.card-image{height:220px}.product-grid{grid-template-columns:1fr 1fr;gap:10px}.product-info{padding:13px}.product-info h3{font-size:1.2rem}
-  .story-art{height:310px}.philosophy-logo{width:min(290px,82%)}.contact-info,.enquiry-form{padding:28px 22px}.footer-top{grid-template-columns:1fr;text-align:center}.footer-top>img{margin:auto}.footer-nav{justify-content:center;flex-wrap:wrap}.footer-bottom{flex-direction:column;gap:8px;text-align:center}
 }
 @media(max-width:430px){.hero h1{font-size:3.4rem}.product-grid{grid-template-columns:1fr}.filters{gap:6px}.filter{padding:8px 13px}}
