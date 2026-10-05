@@ -117,7 +117,7 @@ button,input,textarea,select{font:inherit}
 .full-btn{width:100%}
 footer{background:#211b18;color:#cfc3b8;padding:45px 34px 18px}
 .footer-top{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:30px}
-.footer-top>img{width:105px;height:75px;object-fit:contain;filter:grayscale(1) brightness(2);mix-blend-mode:screen}
+.footer-top>img{width:105px;height:75px;object-fit:contain;filter:grayscale(1) invert(1) brightness(1.8);mix-blend-mode:screen}
 .footer-title{font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--gold2)}
 .footer-top>div>p:last-child{font-size:9px;color:#8f8278}
 .footer-nav{display:flex;justify-content:flex-end;gap:20px;flex-wrap:wrap}
