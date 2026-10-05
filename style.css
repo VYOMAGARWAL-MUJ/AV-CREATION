@@ -102,19 +102,152 @@ button,input,textarea,select{font:inherit}
 .story-copy>p:not(.eyebrow){font-size:12px;color:#75685e;max-width:510px;margin:0 0 18px}
 .story-signature{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:1.5rem;margin-top:28px}
 .story-signature span{font-size:12px;margin-left:12px}
-.contact{background:#fffdf9}
-.contact-grid{max-width:700px;margin:auto;display:grid;grid-template-columns:1fr;gap:20px}
-.contact-info{border:1px solid #e4d7c7;background:#fff;padding:42px}
-.contact-logo{width:86px;height:86px;border-radius:50%;overflow:hidden;border:1px solid rgba(182,134,44,.35);padding:5px;margin-bottom:15px}
-.contact-logo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
-.contact-info h3{font-family:"Cormorant Garamond",serif;font-size:2.35rem;font-weight:500;line-height:1}
-.contact-tagline{font-family:"Cormorant Garamond",serif;font-size:1.1rem;color:var(--gold);margin-top:5px}
-.contact-list{margin:30px 0}
-.contact-list>a,.contact-list>div{display:flex;gap:15px;align-items:flex-start;border-top:1px solid #eee5da;padding:15px 0}
-.icon{color:var(--gold);font-size:17px;width:22px;text-align:center}
-.contact-list small{display:block;color:#a28f7d;font-size:7px;letter-spacing:.18em;margin-bottom:2px}
-.contact-list strong{font-size:11px;font-weight:500;line-height:1.7}
-.full-btn{width:100%}
+/* =========================
+   CONTACT SECTION
+   ========================= */
+
+.contact{
+  background:#fffdf9;
+  padding-top:90px;
+  padding-bottom:90px;
+}
+
+.contact-card{
+  max-width:1180px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:0.95fr 1.55fr;
+  border:1px solid #e4d7c7;
+  background:#fff;
+  position:relative;
+  overflow:hidden;
+}
+
+.contact-brand{
+  padding:55px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  border-right:1px solid #e4d7c7;
+  background:radial-gradient(circle at 20% 50%,rgba(213,173,97,.08),transparent 45%);
+}
+
+.contact-logo{
+  width:145px;
+  height:145px;
+  border-radius:50%;
+  overflow:hidden;
+  border:1px solid rgba(182,134,44,.40);
+  padding:7px;
+  margin-bottom:22px;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(74,52,30,.08);
+}
+
+.contact-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.contact-brand h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:3.1rem;
+  line-height:1;
+  font-weight:500;
+  color:var(--dark);
+  margin:0;
+}
+
+.contact-tagline{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.25rem;
+  color:var(--gold);
+  margin-top:10px;
+  line-height:1.4;
+}
+
+.contact-details{
+  padding:55px 55px 45px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.contact-items{
+  display:grid;
+  grid-template-columns:0.85fr 0.95fr 1.35fr;
+  border-bottom:1px solid #eee5da;
+  margin-bottom:30px;
+}
+
+.contact-item{
+  display:flex;
+  align-items:flex-start;
+  gap:13px;
+  padding:10px 25px 28px;
+  color:inherit;
+  border-left:1px solid #eee5da;
+}
+
+.contact-item:first-child{
+  border-left:none;
+  padding-left:0;
+}
+
+.contact-icon{
+  width:46px;
+  height:46px;
+  min-width:46px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f8f0e3;
+  color:var(--gold);
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.contact-item small{
+  display:block;
+  color:#a28f7d;
+  font-size:8px;
+  letter-spacing:.22em;
+  margin-bottom:6px;
+  text-transform:uppercase;
+}
+
+.contact-item strong{
+  display:block;
+  font-size:11px;
+  font-weight:500;
+  line-height:1.75;
+  color:var(--ink);
+}
+
+.contact-item:hover strong{
+  color:var(--gold);
+}
+
+.address-item{
+  padding-right:0;
+}
+
+.contact-whatsapp{
+  width:100%;
+  min-height:58px;
+  font-size:10px;
+  letter-spacing:.18em;
+  margin-top:2px;
+}
+
+.contact-whatsapp:hover{
+  background:var(--gold);
+}
 footer{background:#211b18;color:#cfc3b8;padding:45px 34px 18px}
 .footer-top{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:30px}
 .footer-top>img{width:105px;height:75px;object-fit:contain;filter:grayscale(1) brightness(2);mix-blend-mode:screen}
@@ -134,4 +267,61 @@ footer{background:#211b18;color:#cfc3b8;padding:45px 34px 18px}
   .section{padding:75px 18px}.intro-layout,.about-grid,.story-inner,.contact-grid{grid-template-columns:1fr}.section-top{display:block}.section-lead{margin-top:20px}.feature-card{grid-column:auto}
   .about-grid{gap:15px}.card-image{height:220px}.product-grid{grid-template-columns:1fr 1fr;gap:10px}.product-info{padding:13px}.product-info h3{font-size:1.2rem}
 }
+
+  /* CONTACT - MOBILE */
+
+  .contact{
+    padding-top:70px;
+    padding-bottom:70px;
+  }
+
+  .contact-card{
+    grid-template-columns:1fr;
+  }
+
+  .contact-brand{
+    padding:45px 25px;
+    border-right:none;
+    border-bottom:1px solid #e4d7c7;
+  }
+
+  .contact-logo{
+    width:110px;
+    height:110px;
+    margin-bottom:18px;
+  }
+
+  .contact-brand h2{
+    font-size:2.5rem;
+  }
+
+  .contact-tagline{
+    font-size:1.1rem;
+  }
+
+  .contact-details{
+    padding:35px 25px 30px;
+  }
+
+  .contact-items{
+    grid-template-columns:1fr;
+    border-bottom:none;
+    margin-bottom:20px;
+  }
+
+  .contact-item,
+  .contact-item:first-child{
+    border-left:none;
+    border-bottom:1px solid #eee5da;
+    padding:18px 0;
+  }
+
+  .contact-item:last-child{
+    border-bottom:none;
+  }
+
+  .address-item{
+    padding-right:0;
+  }
+
 @media(max-width:430px){.hero h1{font-size:3.4rem}.product-grid{grid-template-columns:1fr}.filters{gap:6px}.filter{padding:8px 13px}}
